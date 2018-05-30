@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b4ddd9"
+    tools:context=".IntentEmail">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ToView"
+        android:text="To"
+        android:textSize="30dp"
+
+        android:layout_margin="5dp"
+        android:textColor="#222dff"/>
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ToText"
+    android:hint="Enter Email"
+    android:layout_margin="5dp"
+    android:layout_below="@+id/ToView"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/SubjectView"
+        android:layout_margin="5dp"
+        android:layout_below="@id/ToText"
+        android:text="Subject"
+        android:textSize="30dp"
+        android:textColor="#222dff"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/SubjectText"
+        android:hint="Enter subject"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/SubjectView"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextView"
+        android:layout_margin="5dp"
+        android:layout_below="@id/SubjectText"
+        android:text="Text"
+        android:textSize="30dp"
+        android:textColor="#222dff"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextText"
+        android:hint="Enter Text"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/TextView"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextText"
+        android:text="Submit"
+
+        android:layout_marginLeft="140dp"
+        android:textSize="20dp"
+        />
+
+</RelativeLayout>
